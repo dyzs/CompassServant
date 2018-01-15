@@ -93,7 +93,7 @@ public class CompassServant extends View {
         mDarkPaint.setAntiAlias(true);
         mDarkPaint.setStyle(Paint.Style.STROKE);
         mDarkPaint.setStrokeWidth(mCircleWidth);
-        mDarkPaint.setColor(ContextCompat.getColor(context, R.color.tension_grey));
+        mDarkPaint.setColor(ContextCompat.getColor(context, R.color.blair_grey));
 
         mFlamePaint = new Paint();
         mFlamePaint.setAntiAlias(true);
@@ -194,7 +194,7 @@ public class CompassServant extends View {
                             mMoriSummerPaint);
                 }
             } else {
-                mFlamePaint.setColor(ContextCompat.getColor(mCtx, R.color.tension_grey));
+                mFlamePaint.setColor(ContextCompat.getColor(mCtx, R.color.blair_grey));
                 canvas.drawLine(
                         mCircleCenter[0],
                         mTickRectF.top - mTickLength / 2,
