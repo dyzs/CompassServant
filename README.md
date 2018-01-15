@@ -24,7 +24,6 @@ and add listener and start tension when you reset pointer
 
 
 # License
-=======
 
     Copyright (C) 2018 MisakaMikoto
 
