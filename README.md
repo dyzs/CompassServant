@@ -5,4 +5,4 @@
 [Apache License 2.0](https://github.com/dyzs/utils/blob/master/LICENSE)
 
 # ScreenShot Video
-[![ScreenShot](https://github.com/dyzs/CompassServant/blob/master/video/compass_servant.mp4)
+![](https://github.com/dyzs/CompassServant/blob/master/video/compass_servant.mp4
