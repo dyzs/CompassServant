@@ -10,16 +10,16 @@ xml 支持4种颜色值，也可以使用 setGalaxyColors 方法设置更多种�
 This repo...
 
 # Usage
-Use it in xml
-    <com.dyzs.compassservant.CompassServant
-            android:id="@+id/compass_servant"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:background="@color/black"
-            app:cs_color_commander="3"
+Use it in xml  
+    <com.dyzs.compassservant.CompassServant  
+            android:id="@+id/compass_servant"  
+            android:layout_width="match_parent"  
+            android:layout_height="300dp"  
+            android:background="@color/black"  
+            app:cs_color_commander="3"  
             />
 
-and add listener and start tension when you reset pointer
+and add listener and start tension when you reset pointer   
     compass_servant.setServantListener(this);
 
 
