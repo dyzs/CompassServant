@@ -1,6 +1,6 @@
 # CompassServant
->     这是一个仿魅族分贝仪的自定义 View，也可以叫Compass 或者 Dashboard，可以自己设置颜色渐变，
-xml 支持4种颜色值，也可以使用 setGalaxyColors 方法设置更多种颜色渐变（never mind）。   
+><代码写在这这是一个仿魅族分贝仪的自定义 View，也可以叫Compass 或者 Dashboard，可以自己设置颜色渐变，>
+>xml 支持4种颜色值，也可以使用 setGalaxyColors 方法设置更多种颜色渐变（never mind）。   
                                                                       ----中二病也要敲代码
 
 # ScreenShot Video
