@@ -11,35 +11,36 @@ This repo...
 # Usage
 xml sample  
 ```xml
-	<com.dyzs.compassservant.CompassServant
-        android:layout_width="match_parent"
-	    android:layout_height="300dp"
-	    android:background="@color/black"
-	    android:padding="5dp"
-	    app:cs_color_commander="4"
-	    app:cs_color1="@color/alice_blue"
-	    app:cs_color2="@color/cinnabar_red"
-	    app:cs_color3="@color/green"
-	    app:cs_color4="@color/white"
-	    app:cs_galaxy_degree="280"
-	    app:cs_outer_circle="7dp"
-	    app:cs_tick_mark_length="30dp"
-	    app:cs_decibel="119"
-	    app:cs_text_size="30dp"
-	    />
+<com.dyzs.compassservant.CompassServant
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/black"
+    android:padding="5dp"
+    app:cs_color_commander="4"
+    app:cs_color1="@color/alice_blue"
+    app:cs_color2="@color/cinnabar_red"
+    app:cs_color3="@color/green"
+    app:cs_color4="@color/white"
+    app:cs_galaxy_degree="280"
+    app:cs_outer_circle="7dp"
+    app:cs_tick_mark_length="30dp"
+    app:cs_decibel="119"
+    app:cs_text_size="30dp"
+    />
 ```
 also add listener and start tension when you reset pointer    
 ```java
-	compass_servant.setServantListener(new CompassServant.ServantListener() {
-            @Override
-            public void startTension() {
-                mLooper.sendEmptyMessage(MESSAGE);
-            }
-        });
+compass_servant.setServantListener(new CompassServant.ServantListener() {
+        @Override
+        public void startTension() {
+            mLooper.sendEmptyMessage(MESSAGE);
+        }
+    });
 ```
 
 # Attributes
 ```
+| **** ||
 |:---|:---|
 | app:background | using sys attr{android.R.attr.background} The background must be set.
 | app:padding | using sys attr{android.R.attr.padding} The padding means spacing between border and outer circle.  
