@@ -39,22 +39,22 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
 ```
 
 # Attributes
-```
+
 |**using sys attr{android.R.attr.background, android.R.attr.padding}**|
 |:---|:---|
-| app:background | The background must be set.
-| app:padding | The  spacing between border and outer circle.
+| android:background | The background color.
+| android:padding | The  spacing between border and outer circle.
 | app:cs_color_commander | {2~4},the number of your gradient colors with xml.
 | app:cs_color1 | The start color.
 | app:cs_color2 | The 2nd color.
 | app:cs_color3 | The 3rd color.
 | app:cs_color4 | The 4th color.
 | app:cs_galaxy_degree | The degree of your set with xml.
-| app:cs_outer_circle | Named clearly.
+| app:cs_outer_circle | Outer circle width.
 | app:cs_tick_mark_length | The compass tick length.
 | app:cs_decibel | Number of tick mark.
 | app:cs_text_size | The current tick mark text.
-```
+
 # License
 
     Copyright (C) 2018 Misaka Mikoto(dyzs)
