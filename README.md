@@ -39,11 +39,11 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
 ```
 
 # Attributes
-
-| **using sys attr** | **{android.R.attr.background, android.R.attr.padding}** |
+using sys attrs {android.R.attr.background, android.R.attr.padding}
+| **attr** | **** |
 |:---|:---|
-| android:background | The background color.
-| android:padding | The  spacing between border and outer circle.
+| android:background | The background color {android.R.attr.background}.
+| android:padding | The  spacing between border and outer circle{android.R.attr.padding}.
 | app:cs_color_commander | {2~4},the number of your gradient colors with xml.
 | app:cs_color1 | The start color.
 | app:cs_color2 | The 2nd color.
