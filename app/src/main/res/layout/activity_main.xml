@@ -18,7 +18,17 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:background="@color/black"
+            android:padding="0dp"
             app:cs_color_commander="3"
+            app:cs_color1="@color/white"
+            app:cs_color2="@color/oxygen_green"
+            app:cs_color3="@color/cinnabar_red"
+            app:cs_color4="@color/white"
+            app:cs_galaxy_degree="280"
+            app:cs_outer_circle="7dp"
+            app:cs_tick_mark_length="30dp"
+            app:cs_decibel="119"
+            app:cs_text_size="30dp"
             />
 
     </RelativeLayout>
