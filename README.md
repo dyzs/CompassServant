@@ -39,8 +39,8 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
 ```
 
 # Attributes
-using sys attrs {android.R.attr.background, android.R.attr.padding}    
-| **attr** | **** ||
+using sys attrs {android.R.attr.background, android.R.attr.padding}
+| **attr** ||
 |:---|:---|
 | android:background | The background color {android.R.attr.background}.
 | android:padding | The  spacing between border and outer circle{android.R.attr.padding}.
