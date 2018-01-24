@@ -1,8 +1,6 @@
 package com.dyzs.compassservant;
 
-import android.annotation.SuppressLint;
 import android.graphics.Color;
-import android.support.v4.graphics.ColorUtils;
 
 import java.util.Random;
 

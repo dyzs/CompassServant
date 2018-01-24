@@ -1,4 +1,4 @@
-package com.dyzs.compassservant;
+package com.dyzs.app.activity;
 
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -7,7 +7,10 @@ import android.os.Process;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements CompassServant.ServantListener{
+import com.dyzs.app.compassservant.R;
+import com.dyzs.compassservant.CompassServant;
+
+public class MainActivity extends AppCompatActivity implements CompassServant.ServantListener {
 
     private HandlerThread mHandlerThread;
     private String mHtName = "compass_servant";
