@@ -1,11 +1,11 @@
-# CompassServant|[中文文档](https://github.com/dyzs/CompassServant/blob/master/README_CH.md)
-this is a practice view like compass or dashboard, you can set color gradient wish what you want.
+# 自定义罗盘
+这是一个仿魅族分贝仪的自定义控件，继承 view，可以叫它 Compass 或者 Dashboard，可以自己设置颜色渐变。
 
-# ScreenShot Video
+# gif 录屏
 ![](https://github.com/dyzs/CompassServant/blob/master/video/compass_servant.gif)
 
-# Usage
-xml sample  
+# 使用方式
+xml 方式
 ```xml
 <com.dyzs.compassservant.CompassServant
     android:layout_width="match_parent"
@@ -24,11 +24,11 @@ xml sample
     app:cs_text_size="30dp"
     />
 ```
-and reset tick value and start animation
+通过设置指针的刻度，开启绘制动画
 ```java
 compass_servant.setPointerDecibel(iRandom);
 ```
-also add listener and start tension when you reset pointer    
+同时添加动画监听方法，该方法在当前指针动画结束时调用
 ```java
 compass_servant.setServantListener(new CompassServant.ServantListener() {
         @Override
@@ -38,22 +38,22 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
     });
 ```
 
-# Attributes
-## using sys attrs {android.R.attr.background, android.R.attr.padding}
+# 是用参数
+## 覆盖了两个系统参数 {android.R.attr.background, android.R.attr.padding}
 | **attr** ||
 |:---|:---|
-| android:background | The background color {android.R.attr.background}.
-| android:padding | The  spacing between border and outer circle{android.R.attr.padding}.
-| app:cs_color_commander | {2~4},the number of your gradient colors in xml.
-| app:cs_color1 | The 1st color.
-| app:cs_color2 | The 2nd color.
-| app:cs_color3 | The 3rd color.
-| app:cs_color4 | The 4th color.
-| app:cs_galaxy_degree | The degree of your set in xml.
-| app:cs_outer_circle | Outer circle width.
-| app:cs_tick_mark_length | The compass tick length.
-| app:cs_decibel | Number of tick mark.
-| app:cs_text_size | The current tick mark text size.
+| android:background | 背景颜色 {android.R.attr.background}.
+| android:padding | 罗盘指针的间隙{android.R.attr.padding}.
+| app:cs_color_commander | {2~4},在 xml 中设置控制显示的颜色渐变个数
+| app:cs_color1 | 第一个颜色.
+| app:cs_color2 |
+| app:cs_color3 |
+| app:cs_color4 |
+| app:cs_galaxy_degree | 整个罗盘的刻度的总角度，小于360
+| app:cs_outer_circle | 外圆环宽带
+| app:cs_tick_mark_length | 刻度长度
+| app:cs_decibel | 罗盘的总刻度
+| app:cs_text_size | 中间显示的刻度值的文字大小
 
 # License
 
