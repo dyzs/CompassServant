@@ -61,6 +61,7 @@ public class CompassServant extends View{
             android.R.attr.background,
             android.R.attr.padding
     };// got new skill
+    @Deprecated
     private Path mTrianglePath;
 
     public CompassServant(Context context) {
@@ -153,6 +154,7 @@ public class CompassServant extends View{
         mCCommander = mCCommander % 5;
         if (mCCommander < 2) {mCCommander = 2;}
         int[] retColors = new int[mCCommander], colors = new int[]{mC1, mC2, mC3, mC4};
+        // System.arraycopy(colors, 0, retColors, 0, mCCommander);
         for (int i = 0; i < mCCommander; i++) {
             retColors[i] = colors[i];
         }
@@ -343,17 +345,15 @@ public class CompassServant extends View{
 
     private ValueAnimator mAnimator;
     private float mLastValue = 0f;
-    private long mDuration;
     private void startPointerAnim() {
-        mDuration = (long) (10 * Math.abs(mPointerDegree - mLastValue));
+        long duration = (long) (10 * Math.abs(mPointerDegree - mLastValue));
         mAnimator = ValueAnimator.ofFloat(mLastValue, mPointerDegree);
-        mAnimator.setDuration(mDuration);
+        mAnimator.setDuration(duration);
         mAnimator.setInterpolator(new DecelerateInterpolator());
         mAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                float value = (float) animation.getAnimatedValue();
-                mPointerDegree = value;
+                mPointerDegree = (float) animation.getAnimatedValue();
                 postInvalidate();
             }
         });
