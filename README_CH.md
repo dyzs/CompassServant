@@ -1,10 +1,31 @@
-# 自定义罗盘
+自定义罗盘
+--------
 这是一个仿魅族分贝仪的自定义控件，继承 view，可以叫它 Compass 或者 Dashboard，可以自己设置颜色渐变。
 
-# gif 录屏
+gif 录屏
+--------
 ![](https://github.com/dyzs/CompassServant/blob/master/video/compass_servant.gif)
 
-# 使用方式
+配置 maven & gradle
+--------
+maven
+```xml
+<dependency>
+  <groupId>com.dyzs.compassservant</groupId>
+  <artifactId>compassservant</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+gradle
+```xml
+compile 'com.dyzs.compassservant:compassservant:1.0.0'
+```
+
+使用方式
+--------
+
 xml 方式
 ```xml
 <com.dyzs.compassservant.CompassServant
@@ -38,7 +59,8 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
     });
 ```
 
-# 是用参数
+参数
+--------
 ## 覆盖了两个系统参数 {android.R.attr.background, android.R.attr.padding}
 | **attr** ||
 |:---|:---|

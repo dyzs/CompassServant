@@ -1,11 +1,33 @@
-# CompassServant|[中文文档](https://github.com/dyzs/CompassServant/blob/master/README_CH.md)
+CompassServant|[中文文档](https://github.com/dyzs/CompassServant/blob/master/README_CH.md)
+--------
 this is a practice view like compass or dashboard, you can set color gradient wish what you want.
 
-# ScreenShot Video
+ScreenShot Video
+--------
+
 ![](https://github.com/dyzs/CompassServant/blob/master/video/compass_servant.gif)
 
-# Usage
-xml sample  
+Download
+--------
+maven
+```xml
+<dependency>
+  <groupId>com.dyzs.compassservant</groupId>
+  <artifactId>compassservant</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
+
+gradle
+```xml
+compile 'com.dyzs.compassservant:compassservant:1.0.0'
+```
+
+Usage
+--------
+
+xml sample
 ```xml
 <com.dyzs.compassservant.CompassServant
     android:layout_width="match_parent"
@@ -38,7 +60,9 @@ compass_servant.setServantListener(new CompassServant.ServantListener() {
     });
 ```
 
-# Attributes
+Attributes
+--------
+
 ## using sys attrs {android.R.attr.background, android.R.attr.padding}
 | **attr** ||
 |:---|:---|
